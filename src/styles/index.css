@@ -1,0 +1,224 @@
+/* global styles */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  font-family: "Arial", sans-serif;
+  background-color: #ffffff;
+}
+
+h1,
+h2,
+h3,
+p,
+ul,
+ol {
+  margin-top: 0;
+}
+
+h1 {
+  font-size: 50px;
+}
+
+h2 {
+  font-size: 40px;
+}
+
+h3 {
+  font-size: 28px;
+}
+
+p {
+  font-size: 20px;
+}
+
+img {
+  width: 100%;
+}
+
+section {
+  padding-top: 80px;
+  padding-bottom: 80px;
+}
+
+.wrap {
+  width: 75%;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.btn {
+  color: white;
+  padding: 8px 15px 8px 15px;
+  background-color: #ff6f61;
+  border: none;
+  border-radius: 5px;
+  font-size: 15px;
+  text-decoration: none;
+}
+
+.btn:hover {
+  background-color: #f64438;
+  cursor: pointer;
+}
+
+/* header section */
+header {
+  position: relative;
+  background: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.7)),
+    url("../images/header-img.jpg") center/cover no-repeat fixed;
+  height: 120vh;
+}
+
+header .nav-bar {
+  position: absolute;
+  background-color: #a093923d;
+  width: 100%;
+  height: 60px;
+  padding: 12px;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+}
+
+.nav-bar .nav-bar-item {
+  text-decoration: none;
+  color: white;
+  font-size: 20px;
+  cursor: pointer;
+  z-index: 999;
+}
+
+.nav-bar-item:hover {
+  color: #ff6f61;
+}
+
+.nav-bar-item:not(:last-child) {
+  margin-right: 10%;
+}
+
+/* to create the parallax effect */
+#banner .overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+#banner .inner-header {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: white;
+}
+
+/* classes section */
+#classes {
+  background-color: #f4f4f4;
+}
+
+#classes .classes-container {
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#classes .classes-container .class-card {
+  width: calc(50% - 20px);
+  margin: 10px;
+  background-color: white;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+#classes .classes-container .class-card .img-box {
+  position: relative;
+  padding: 20px;
+}
+
+#classes .classes-container .class-card .discount {
+  position: absolute;
+  left: 20px;
+  background-color: white;
+  color: #f64438;
+  font-weight: bold;
+  padding: 20px;
+}
+
+#classes .classes-container .class-card .content-box {
+  padding: 20px;
+}
+
+/* schedule section */
+#schedule .schedule-container table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+#schedule .schedule-container table th,
+#schedule .schedule-container table td {
+  border-bottom: 1px solid #ddd;
+  padding: 8px;
+}
+
+#schedule .schedule-container table th,
+#schedule .schedule-container table td {
+  padding: 10px;
+  text-align: left;
+  font-size: 18px;
+}
+
+/* contact section */
+#contact {
+  background-color: #f4f4f4;
+}
+
+#contact .form-container {
+  background-color: #333333;
+  border-radius: 8px;
+  width: 40%;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+#contact .form-container .form-group {
+  padding: 20px;
+}
+
+.form-group label {
+  color: #ffffff;
+}
+
+.form-group input,
+.form-group textarea {
+  width: 100%;
+  padding: 10px;
+}
+
+.form-group input:focus,
+.form-group textarea:focus {
+  outline: none;
+  border-color: #f64438;
+}
+
+/* Footer Section */
+footer {
+  position: fixed;
+  bottom: 0;
+  background-color: #ff6f61;
+  text-align: center;
+  width: 100%;
+  height: 60px;
+  color: white;
+  padding: 10px;
+}
+
+.footer-content {
+  padding: 10px;
+}
